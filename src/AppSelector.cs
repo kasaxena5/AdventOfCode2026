@@ -19,6 +19,10 @@ namespace AdventOfCode
                     return new A_SecretEntranceQuestionApp(reader, writer);
                 case 2:
                     return new B_SecretEntranceQuestionApp(reader, writer);
+                case 3:
+                    return new A_GiftShopQuestionApp(reader, writer);
+                case 4:
+                    return new B_GiftShopQuestionApp(reader, writer);
                 default:
                     return new SampleQuestionApp(reader, writer);
             }

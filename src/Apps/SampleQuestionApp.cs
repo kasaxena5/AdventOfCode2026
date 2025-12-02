@@ -8,7 +8,7 @@ namespace AdventOfCode.Apps
 
     public class SampleQuestionApp : IApp<string[], string[]>
     {
-        public IInputParser<string[]> inputParser => new StringArrayInputParser();
+        public IInputParser<string[]> inputParser => new StringArrayInputParser(Environment.NewLine);
         public IOutputParser<string[]> outputParser => new StringArrayOutputParser();
         public ISolver<string[], string[]> solver => new SampleQuestionSolver();
         public IOutputWriter writer => writerInternal;

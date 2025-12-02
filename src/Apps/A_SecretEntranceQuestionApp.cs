@@ -8,7 +8,7 @@ namespace AdventOfCode.Apps
 
     public class A_SecretEntranceQuestionApp : IApp<string[], int>
     {
-        public IInputParser<string[]> inputParser => new StringArrayInputParser();
+        public IInputParser<string[]> inputParser => new StringArrayInputParser(Environment.NewLine);
         public IOutputParser<int> outputParser => new StandardOutputParser<int>();
         public ISolver<string[], int> solver => new A_SecretEntranceQuestionSolver();
         public IOutputWriter writer => writerInternal;

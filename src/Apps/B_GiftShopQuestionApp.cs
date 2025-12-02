@@ -6,18 +6,18 @@ namespace AdventOfCode.Apps
     using AdventOfCode.Solvers;
     using AdventOfCode.Writers;
 
-    public class B_SecretEntranceQuestionApp : IApp<string[], int>
+    public class B_GiftShopQuestionApp : IApp<string[], long>
     {
-        public IInputParser<string[]> inputParser => new StringArrayInputParser(Environment.NewLine);
-        public IOutputParser<int> outputParser => new StandardOutputParser<int>();
-        public ISolver<string[], int> solver => new B_SecretEntranceQuestionSolver();
+        public IInputParser<string[]> inputParser => new StringArrayInputParser(",");
+        public IOutputParser<long> outputParser => new StandardOutputParser<long>();
+        public ISolver<string[], long> solver => new B_GiftShopQuestionSolver();
         public IOutputWriter writer => writerInternal;
         public IInputReader reader => readerInternal;
 
         private IOutputWriter writerInternal;
         private IInputReader readerInternal;
 
-        public B_SecretEntranceQuestionApp(IInputReader reader, IOutputWriter writer)
+        public B_GiftShopQuestionApp(IInputReader reader, IOutputWriter writer)
         {
             this.writerInternal = writer;
             this.readerInternal = reader;
