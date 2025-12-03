@@ -23,6 +23,10 @@ namespace AdventOfCode
                     return new A_GiftShopQuestionApp(reader, writer);
                 case 4:
                     return new B_GiftShopQuestionApp(reader, writer);
+                case 5:
+                    return new A_LobbyQuestionApp(reader, writer);
+                case 6:
+                    return new B_LobbyQuestionApp(reader, writer);
                 default:
                     return new SampleQuestionApp(reader, writer);
             }
