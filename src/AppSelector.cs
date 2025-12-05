@@ -31,6 +31,10 @@ namespace AdventOfCode
                     return new A_PrintingDeptQuestionApp(reader, writer);
                 case 8:
                     return new B_PrintingDeptQuestionApp(reader, writer);
+                case 9:
+                    return new A_CafeteriaQuestionApp(reader, writer);
+                case 10:
+                    return new B_CafeteriaQuestionApp(reader, writer);
                 default:
                     return new SampleQuestionApp(reader, writer);
             }

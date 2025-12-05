@@ -15,5 +15,11 @@ namespace AdventOfCode.Utils
                 Console.WriteLine();
             }
         }
+
+        public static void Print(T[] grid)
+        {
+            int n = grid.Length;
+            Console.WriteLine(string.Join(", ", grid));
+        }
     }
 }
