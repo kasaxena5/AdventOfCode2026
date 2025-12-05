@@ -3,6 +3,9 @@
 ##
 ## Get latest from `dotnet new gitignore`
 
+# raw files
+questions/raw
+
 # dotenv files
 .env
 
