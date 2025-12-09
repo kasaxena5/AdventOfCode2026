@@ -47,6 +47,10 @@ namespace AdventOfCode
                     return new A_PlaygroundQuestionApp(reader, writer);
                 case 16:
                     return new B_PlaygroundQuestionApp(reader, writer);
+                case 17:
+                    return new A_MovieTheaterQuestionApp(reader, writer);
+                case 18:
+                    return new B_MovieTheaterQuestionApp(reader, writer);
                 default:
                     return new SampleQuestionApp(reader, writer);
             }
