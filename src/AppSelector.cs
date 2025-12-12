@@ -59,6 +59,8 @@ namespace AdventOfCode
                     return new A_ReactorQuestionApp(reader, writer);
                 case 22:
                     return new B_ReactorQuestionApp(reader, writer);
+                case 23:
+                    return new A_ChristmasTreeQuestionApp(reader, writer);
                 default:
                     return new SampleQuestionApp(reader, writer);
             }
